@@ -63,8 +63,6 @@
         </div>
 
         <hr>
-
-        <button id="b_check_for_updates" class="btn btn-block" data-bind="click: checkForUpdates, visible: !updateAvailable() && !isBusy(), enable: !isBusy(), css: {disabled: !isReadyToCheck()}">{{ _('Check for Updates') }}</button>
         <button id="b_update_firmware" class="btn btn-block btn-success" data-bind="click: flashUpdate, visible: updateAvailable() && !isBusy(), enable: !isBusy(), css: {disabled: !isReadyToUpdate()}">{{ _('Update Firmware') }}</button>
         <div class="progress progress-info progress-striped active" data-bind="visible: isBusy()">
             <div class="bar" style="width: 100%;"><label data-bind="text: progressBarText()"></div>
